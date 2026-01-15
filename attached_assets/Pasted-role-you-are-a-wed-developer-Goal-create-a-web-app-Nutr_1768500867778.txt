@@ -1,0 +1,54 @@
+role: you are a wed developer
+Goal: create a web app NutriCoach that -
+
+
+create a comprehensive AI Diet Coach AI Agent with all the requested features. The app must include:
+
+User Authentication & Profile Creation - Users sign up with email/password, then complete a detailed profile including age, weight, height, target weight, duration, diet type (weight loss, bulk, muscle building, marathon prep, etc.), and optional social media links. The app automatically calculates personalized calorie and macro targets based on their goals.
+
+AI-Powered Macro Tracker - Users can upload food photos or describe their meals in text, and Gemini AI analyzes them to identify nutrition info (calories, protein, carbs, fats). The system tracks daily progress, shows visual progress bars, and provides AI-generated suggestions based on remaining macros.
+
+AI Recipe Generator - Select available ingredients (with options for custom additions), and Gemini AI generates 5 personalized recipes that align with the user's diet goals and macro targets, complete with cooking instructions and full nutrition breakdown. And if we like it and makeit, just click on a lets make this or something button that will automatically add it to the daily macros list
+
+Cheat Meal Helper - Tracks monthly cheat meal count, displays warnings if going over recommended limits (4-6/month), and generates AI-powered healthy alternatives for any craving that still taste great but fit within macro goals. Users can track when they make these alternatives.
+
+Social Media Integration - Users can share their progress snapshots to Instagram, Twitter, or Facebook, and download a beautifully designed progress card image showing their fitness journey stats.
+
+All data is securely stored using Supabase authentication and the KV store, with the Gemini API powering all AI features for food recognition, recipe generation, and cheat meal alternatives, and macros calculation,use GEMINI API
+
+In the dashboard, allow me to delete meals.  With a cross in a corner of the box. In the food tracker, when I am entering a product description (a food description), it is not generating any response. The recipe section is good, but in that, it is not giving the step-by-step instructions on how to make the recipe. Just add another button, "See this recipe," and add a button that I made. In this cheat meal section, is just taking what I wrote in the text box and adding a healthier word in front of it. Give me a proper recipe as an alternative instead of saying the exact thing and help me control my amount or portions. Also add a profile section at the top where I can change my weight and give notification every 4 weeks to check my weight and update it.
+The recipes are hardcoded. use the gemini api to generate the recipes suggestions according to the ingredients availiable to the user as entered. in the food tracker, dont need a breakdown for each source just total macros. in the cheat mela section, help me add a cross too. make the cross small and centre align it within a red circle. make a hero section with all sections. add a deletee account option with confirmation of deletion at the ned of the profile section. when the user updates their weight, add it to a log report with date and the last update with the corresponding date. add a view past changes options there. add a longout option in the end. 
+
+allow me to add description or picture for cheat meal to track calories too but with exception. and healthy alternatives to chocolate? suggest cocoa fudge bowl with oats or yogurt or something. lighter version of fat to use for chocolate shouldnt be valid. and allow me to add the cheat meal alternative in todays log. and allow me to download the weekly meals and macro count as a report in profile 
+
+ai_diet_coach
+|-static
+	|-style.css
+|-templates
+	|-index.html
+|-.env
+|-app.py
+|-requirements.txt
+
+
+
+features: 
+1. login with otp verification  email
+2. invalid or account not existing redirect to signup page
+3. otpverificatioon of valid existing email , and valid password min 6 characters and a see button- authentication 
+4. enter user profile details ( age, current weight, target weight, goal {weight loss, muscle building, maintenance, etc}, duration to goal, social media handles) - can be updated later in user profile post signup
+5. dashboard with all the macros calculated and meal logs tracked with a cross button to delete meal.
+6. meal tracker and macros calculator: enter a text description of a meal or upload a  photo of the meal , and GEMINI API KEY is used to extract macros content and displayed, and a button to add/track the meal/macro
+7. recipe generator- user enters existing ingredients and send the stuff to gemini, and it responds with suggested meals/recipes with 2 button- see recipe, made this.
+8. cheat meal tracker - with alternatives suggestions to make healthier to satisfy cravings- response by gemini and button : made this.
+9. progress to share on social media which will redirect ot you selected social media handle, create a curated poster by google nano banana. (with new recipes and meal tracker, with input images)
+10. profile page- can update details, download meals tracker log(cheat meals included), recipes tried log, and weight update log.; logout button; delete account button with email otp verification.
+
+
+
+
+you are a senior full stack web developer and a UI/UX designer. fix all the endpoints and authentication problems and integrate gemini_api successfully to calculate macros from text description and image upload , and generate quick recipe suggestions by entry of available ingredients. and taking into consideration the alleries of the user. and cheat meal tracker with calorie calculator.  if the email already registered in signup them prompt the user and redirect to login with password, and a 1. button forgot password, which will take to send otp window and then prompt follow intructions sent on mail to reset password, 2. login with otp. in login page if someone enters a new email, prompt account doesnt exist, signup and redirect. post signup take to setup page with entry of details(age, current weight, target weights, food allergies). post login i want the hero section to be at the top, the boxes that explain what all this web offers, i dont need them after onboaring only in landing page. and add the loader after each functionality. fix the gemini api fiunction as it is not calculating any macros of enters food or uploaded picture like we can do in gemini, and recipe generator that suggests recipes with available ingredients using gemini as well, and cheat meal tracker, i dont want healthy alternative suggestion, so updtae that. and help calculate that cmacros and tracker the cheta meal. in profile icon of the hero section: view profile(where i can update weight), view progress(where i can download calories trackedand foods eaten  based on the daterange seleted, a cheat meal tracker what all cheatmeals i have had, and weight progress, and charts for weight tracker, and calories eaten over each month in a horizontal arrow menu). 
+
+Give the full completed code with fixed endpoints(gemini api and supabase) in a zip for me to download and  deploy it 
+
+

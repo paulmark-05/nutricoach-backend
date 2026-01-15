@@ -1,0 +1,12 @@
+Flask
+Flask-Cors
+gunicorn
+python-dotenv
+supabase
+httpx
+websockets
+google-generativeai
+Pillow
+Flask-Limiter
+redis
+python-jose
