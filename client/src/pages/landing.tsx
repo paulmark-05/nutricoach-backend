@@ -54,10 +54,7 @@ export default function Landing() {
           </motion.div>
           
           <motion.h1 variants={item} className="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-8">
-            Your Personal AI <br/>
-            <span className="bg-gradient-to-r from-pastel-pink-dark via-pastel-purple-dark to-pastel-blue-dark bg-clip-text text-transparent">
-              Diet Coach
-            </span>
+            Your personal ai diet coach
           </motion.h1>
           
           <motion.p variants={item} className="text-xl text-slate-500 mb-12 max-w-2xl mx-auto leading-relaxed">
