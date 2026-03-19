@@ -5,7 +5,11 @@
   "license": "MIT",
   "scripts": {
   "dev": "NODE_ENV=development tsx server/index.ts",
+<<<<<<< HEAD
   "build": "tsc -p tsconfig.server.json",
+=======
+  "build": "tsc",
+>>>>>>> 7bffd67559414e861928ab6c9f7825af659c85a1
   "start": "NODE_ENV=production node dist/server/index.js"
 },
   "dependencies": {
