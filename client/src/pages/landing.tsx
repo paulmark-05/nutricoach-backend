@@ -48,17 +48,17 @@ export default function Landing() {
           animate="show"
           className="max-w-4xl mx-auto text-center"
         >
+          <motion.h1 variants={item} className="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-4">
+            Your personal ai diet coach
+          </motion.h1>
+          
           <motion.div variants={item} className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-slate-100 mb-8">
             <Sparkles className="w-4 h-4 text-pastel-yellow-dark" />
             <span className="text-sm font-medium text-slate-600">Powered by Gemini AI</span>
           </motion.div>
           
-          <motion.h1 variants={item} className="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-8">
-            Your personal ai diet coach
-          </motion.h1>
-          
           <motion.p variants={item} className="text-xl text-slate-500 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Track meals with photos, get smart recipe suggestions, and manage cravings with healthy alternatives. Nutrition made simple, beautiful, and smart.
+            Tracking meals made simple and smart.
           </motion.p>
           
           <motion.div variants={item} className="flex flex-col sm:flex-row items-center justify-center gap-4">
