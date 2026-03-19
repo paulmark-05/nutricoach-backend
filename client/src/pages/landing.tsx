@@ -25,11 +25,11 @@ export default function Landing() {
       
       {/* Navigation */}
       <nav className="relative z-10 container mx-auto px-6 py-6 flex justify-between items-center">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <div className="bg-pastel-green p-2 rounded-xl text-pastel-green-dark">
             <Salad className="w-6 h-6" />
           </div>
-          <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-slate-600">
+          <span className="text-3xl font-extrabold text-slate-900">
             NutriCoach
           </span>
         </div>
@@ -52,14 +52,14 @@ export default function Landing() {
             Your personal ai diet coach
           </motion.h1>
           
-          <motion.div variants={item} className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-slate-100 mb-8">
+          <motion.p variants={item} className="text-xl text-slate-500 mb-6 max-w-2xl mx-auto leading-relaxed">
+            Tracking meals made simple and smart.
+          </motion.p>
+
+          <motion.div variants={item} className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-slate-100 mb-12">
             <Sparkles className="w-4 h-4 text-pastel-yellow-dark" />
             <span className="text-sm font-medium text-slate-600">Powered by Gemini AI</span>
           </motion.div>
-          
-          <motion.p variants={item} className="text-xl text-slate-500 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Tracking meals made simple and smart.
-          </motion.p>
           
           <motion.div variants={item} className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="/api/login">
